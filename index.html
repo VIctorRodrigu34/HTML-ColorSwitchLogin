@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Color switch login form</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="login">
+      <h2 id="txt">Login</h2>
+      <div class = "inputBox">
+        <input type="text" placeholder="Username">
+      </div>
+      
+       <div class = "inputBox">
+        <input type="password" placeholder="Password">
+      </div>
+      
+       <div class = "inputBox">
+        <input type="submit" value="Login" id="btn">
+      </div>
+      
+      <div class="group">
+        <a href="#">Forget Password</a>
+        <a href="#">Signup</a>
+      </div>
+    </div>
+    <div class="colors">
+      <span class="active" onclick= "changeColor(#1dd1a1)" style= "--clr:#1dd1a1;"></span>
+      <span class="active" onclick= "changeColor(#ff6b6b)" style= "--clr:#ff6b6b;"></span>
+      <span class="active" onclick= "changeColor(#2e86de)" style= "--clr:#2e86de;"></span>
+      <span class="active" onclick= "changeColor(#f368e0)" style= "--clr:#f368e0;"></span>
+      <span class="active" onclick= "changeColor(#ff9f43)" style= "--clr:#ff9f43;"></span>
+    </div>
+   <script>
+     Let btn = document.getElementById('btn');
+     Let txt= document.getElementById('txt');
+     function changeColor(color){
+       document.body.style.background = color;
+       btn.style.background = color;
+       txt.style.background = color;
+     }
+    </script> 
+    
+  </body>
+</html>
